@@ -44,7 +44,7 @@
     align-items: center;
     height: 8vh;
     background-color: #25a8ad59;
-    padding: 0 2rem;
+    padding: 0 5rem;
 }
 
 .icon-logo {
@@ -70,12 +70,21 @@
     justify-content: space-between;
     width: 25rem;
     color: #F8F7F6;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .secondt-part-nav a {
     color: #F8F7F6;
     text-decoration: none;
+    font-weight: 600;
+}
+
+.secondt-part-nav a:hover {
+    color: #064a54;
+}
+
+.active {
+    color: #064354 !important;
 }
 
 main {
@@ -113,7 +122,12 @@ article {
     font-size: 1rem;
     font-weight: 900;
     padding: 0 3rem;
+    cursor: pointer;
 }
+
+.button-submit:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
 
 .section-two {
     display: flex;
@@ -170,6 +184,10 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+}
+
+.nav-container a:current {
+    background-color: red;
 }
 
 @media only screen and (max-width: 600px) {
